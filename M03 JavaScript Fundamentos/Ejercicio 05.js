@@ -30,7 +30,7 @@ function combinarNombres(nombre, apellido) {
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
 
-   return nombre + apellido;
+   return nombre + ' ' + apellido;
 }
 
 function obtenerSaludo(nombre) {
@@ -38,7 +38,7 @@ function obtenerSaludo(nombre) {
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
 
-   return "Hola " + nombre;
+   return "Hola " + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {

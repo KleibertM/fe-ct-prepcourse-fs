@@ -5,6 +5,12 @@ function obtenerMayor(x, y) {
    // Retornar el número más grande.
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
+
+   if (x >= y) {
+      return x;
+   } else {
+      return y;
+   }
 }
 
 function mayoriaDeEdad(edad) {
@@ -15,8 +21,8 @@ function mayoriaDeEdad(edad) {
 
    if (edad >= 18){
       return 'Allowed';
-   } else {
-      return 'Not Allowed'
+   } else { 
+      return 'Not allowed';
    }
 }
 
@@ -45,19 +51,15 @@ function saludo(idioma) {
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
 
-   switch (idioma){
+   switch (idioma) {
       case "aleman":
-         console.log("Guten Tag!");
-         break;
+         return "Guten Tag!";
       case "mandarin":
-         console.log("Ni Hao!");
-         break;
+         return "Ni Hao!";
       case "ingles":
-         console.log("Hello!");
-         break;
+         return "Hello!";
       default:
-         console.log("Hola!")
-
+         return "Hola!";
    }
 }
 
@@ -71,21 +73,17 @@ function colors(color) {
    // IMPORTANTE: utilizar el statement SWITCH.
    // Tu código:
 
-   switch (color){
+   switch (color) {
       case "blue":
-         console.log('This is blue');
-         break;
+         return "This is blue";
       case "red":
-         console.log("this is red");
-         break;
+         return "This is red";
       case "green":
-         console.log("This is green");
-         break;
+         return "This is green";
       case "orange":
-         console.log("This is orange")
-         break;
+         return "This is orange";
       default:
-         console.log("Color " + color + " not found.");
+         return "Color not found";
    }
 }
 
@@ -93,10 +91,11 @@ function esDiezOCinco(num) {
    // Retornar true si "num" es 10 o 5.
    // De lo contrario, retornar false.
    // Tu código:
-   if ((num == '10') || num === ('5')){
+   if (num === 10 || num === 5) {
       return true;
-      }else{
-         return false};
+   } else {
+      return false;
+   }
    }
 
 
@@ -188,10 +187,10 @@ function esVerdadero(valor) {
    // Caso contrario, retornar "Soy falso".
    // Tu código:
 
-   if (valor === true){
-      return "Soy Verdadero";
+   if (valor){
+      return "Soy verdadero";
    }else {
-      return "Soy Falso";
+      return "Soy falso";
    }
 }
 
@@ -200,11 +199,8 @@ function tieneTresDigitos(num) {
    // Caso contrario, retornar false.
    // Tu código:
 
-   if (num.length === 3){
-      return true;
-   } else {
-      return false;
-   }
+   var numString = num.toString();
+   return numString.length === 3;
 }
 
 function doWhile(num) {
